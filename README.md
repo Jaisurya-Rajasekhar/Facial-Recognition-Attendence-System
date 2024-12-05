@@ -15,34 +15,11 @@ dlib: For facial recognition and landmark detection.
 OpenCV: For image processing and video handling.
 CSV Module: For logging attendance.
 
--Setup Instructions
-1. Clone the Repository
-bash
-Copy code
-git clone https://github.com/your-username/Facial-Recognition-Attendance-System.git
-cd Facial-Recognition-Attendance-System
-2. Install Dependencies
-Ensure Python is installed, then install the required libraries:
-
-bash
-Copy code
-pip install opencv-python dlib
-3. Prepare the Face Dataset
-Save images of known individuals in a folder (e.g., known_faces/).
-Name the images as Name.jpg or Name.png.
-4. Run the Application
-bash
-Copy code
-python main.py
-How It Works
-Encoding Known Faces:
-The application preprocesses and encodes the faces from the known_faces/ folder using dlib's facial recognition model.
-
-Real-Time Detection:
+-Real-Time Detection:
 It captures frames from the webcam feed using OpenCV and detects faces in real-time.
 
-Face Matching:
+-Face Matching:
 The detected faces are matched against the encoded faces to identify individuals.
 
-Attendance Logging:
+-Attendance Logging:
 Once a face is recognized, the name is logged into a attendance.csv file with the current date and time.
